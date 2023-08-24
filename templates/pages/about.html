@@ -4,87 +4,30 @@
 {% block content %}
 
 
-<div class="row ">
+<div class="row mt-5">
     <div class="container col-lg-6">
         <div class="container text-center">
             <h1 class="py-3">Meet Our Team</h1>
         </div>
         <div class="row  ms-5 mt-3 ">
-            <div class="col-lg-4 text-center">
-                <div class="card mb-3">
-                    <div class="card-body">
-                      <img src="https://picsum.photos/100/100" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                      <h5>Deone Booysen</h5>
-                      <h6 class="text-muted">Director</h6>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
-                
-                    </div>
-                </div>
-                                
 
-            </div>
+            {% for object in object_list %}
             <div class="col-lg-4 text-center">
                 <div class="card mb-3">
                     <div class="card-body">
                       <img src="https://picsum.photos/100/100" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                      <h5>Susan Williams</h5>
-                      <h6 class="text-muted">Lead Writer</h6>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
+                      <h5>{{object.first_name}} {{object.last_name}}</h5>
+                      <h6 class="text-muted">{{object.job_title}}</h6>
+                      <p>Qualification: {{object.qualifications}}</p>
                 
                     </div>
-                </div>
-                                
-
+                </div>   
             </div>
-            <div class="col-lg-4 text-center">
-                <div class="card mb-3">
-                    <div class="card-body">
-                      <img src="https://picsum.photos/100/100" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                      <h5>Susan Williams</h5>
-                      <h6 class="text-muted">Lead Writer</h6>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
-                
-                    </div>
-                </div>
-                                
-                
-            </div>
-            <div class="col-lg-4 text-center">
-                <div class="card mb-3">
-                    <div class="card-body">
-                      <img src="https://picsum.photos/100/100" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                      <h5>Susan Williams</h5>
-                      <h6 class="text-muted">Lead Writer</h6>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
-                
-                    </div>
-                </div>
-                                
-                
-            </div>
-            <div class="col-lg-4 text-center">
-                <div class="card mb-3">
-                    <div class="card-body">
-                      <img src="https://picsum.photos/100/100" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                      <h5>Susan Williams</h5>
-                      <h6 class="text-muted">Lead Writer</h6>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
-                
-                    </div>
-                </div>
-                                
-                
-            </div>
-            
-            
-
-        </div>
-        
-
+            {% endfor %}
+        </div>     
     </div>
     <div class="container col-lg-6 align-self-center text-center">
         <img src="https://picsum.photos/600/600" alt="" class="rounded-1">
-
     </div>
 </div>
 

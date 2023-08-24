@@ -1,0 +1,32 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %}Create Service{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row ">
+        <div class="col-4 m-auto">
+            
+            <form method="post" action="" class="form-control mt-5 text-center">
+
+
+                <div class="form-group">
+
+                <h4 class="ps-2 mt-3"><strong class="border-bottom" >{{object.service_title}}</strong></h4>
+                    <div class="form-group">
+                    <p class="form-text">{{object.description}}</p>
+                    </div>
+                    
+                </div>
+                <a href="" type="submit" class="btn btn-outline-dark my-2 mx-4">Update</a>
+                <a href="" type="submit" class="btn btn-outline-danger my-2 ">Delete</a>
+            </form>
+
+        </div>
+        
+        
+
+    </div> 
+</div>
+
+{% endblock content %}

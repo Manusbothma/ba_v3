@@ -1,0 +1,33 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %}Create Service{% endblock title %}
+
+{% block content %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4 ">
+                    
+                    <form method="post" action="" class="form-control mt-5 text-center">
+                        {% csrf_token %}
+                        <h2 class="text-center mb-3 mt-3">Create A Service</h2>
+                        <div class="form-group">
+
+                            <p class="text-start"><strong>Service tile: </strong><span class="ps-5">{{form.service_title}}</span></p>
+                            
+                            <p class="text-start"><strong>Service Content: </strong></p>
+                            <p class="form-text">{{form.service_content}}</p>
+                            
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-dark mb-5">Confirm</button>
+            
+                    </form>
+    
+                </div>
+                
+                
+    
+            </div> 
+        </div>
+
+{% endblock content %}
