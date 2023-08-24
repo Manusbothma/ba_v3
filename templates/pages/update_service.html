@@ -11,7 +11,7 @@
                 <div class="form-control">
                     <form  action="" method="post">
                         {% csrf_token %}
-                        <div class="form-group">
+                        <div class="form-group mb-3 mt-3">
                             <label class="form-text" for="id_service_title"><h5>Service Title:</h5></label>
                             <input class="form-control" type="text" name="service_title" value="{{object.service_title}}" maxlength="255" required id="id_service_title">
     
