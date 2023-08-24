@@ -1,5 +1,13 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView, CreateView, DetailView
+from django.views.generic import (
+    TemplateView,
+    ListView,
+    CreateView,
+    DetailView,
+    UpdateView,
+    DeleteView,
+)
+
 
 from .models import Profile, Service
 from django.urls import reverse_lazy
@@ -34,3 +42,10 @@ class ServiceDetail(DetailView):
     model = Service
     fields = ["service_title", "description", "image"]
     template_name = "pages/service_detail.html"
+
+
+class UpdateService(UpdateView):
+    template_name = "pages/update_service.html"
+    model = Service
+    fields = ["service_title", "description", "image"]
+    success_url = reverse_lazy("services")
