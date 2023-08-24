@@ -4,9 +4,10 @@ from .views import (
     AboutPageView,
     ContactPageView,
     ServicesPageView,
-    CreateService,
+    ServiceCreate,
     ServiceDetail,
-    UpdateService,
+    ServiceUpdate,
+    ServiceDelete,
 )
 
 urlpatterns = [
@@ -14,7 +15,8 @@ urlpatterns = [
     path("about/", AboutPageView.as_view(), name="about"),
     path("contact/", ContactPageView.as_view(), name="contact"),
     path("services/", ServicesPageView.as_view(), name="services"),
-    path("service_create/", CreateService.as_view(), name="service_create"),
+    path("service_create/", ServiceCreate.as_view(), name="service_create"),
     path("service/detail/<int:pk>/", ServiceDetail.as_view(), name="service_detail"),
-    path("service/update/<int:pk>/", UpdateService.as_view(), name="service_update"),
+    path("service/update/<int:pk>/", ServiceUpdate.as_view(), name="service_update"),
+    path("service/delete/<int:pk>/", ServiceDelete.as_view(), name="service_delete"),
 ]

@@ -19,7 +19,7 @@
                     
                 </div>
                 <a href="{% url 'service_update' object.pk %}" type="submit" class="btn btn-outline-dark my-2 mx-4">Update</a>
-                <a href="" type="submit" class="btn btn-outline-danger my-2 ">Delete</a>
+                <a href="{% url 'service_delete' object.pk %}" type="submit" class="btn btn-outline-danger my-2 ">Delete</a>
             </form>
 
         </div>
