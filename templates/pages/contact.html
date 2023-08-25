@@ -3,70 +3,100 @@
 {% block title %}Contact{% endblock title %}
 {% block content %}
 
-<div class="container mt-5 mb-5">
+<div class="container mb-5">
     <div class="row"> 
-        <div class="col-md-6 pe-5 mb-5">
-            <form action="">
-                <div class=" mb-5 text-center "><h1>Please fill in our contact form</h1></div>
-                <div class="form-group mb-3 mt-4">
+        <div class="col-md-6 pe-5 mb-5 align-self-center">
+            <div class="form-control">
+                <form action="">
+                    <div class="text-center mt-3 border-bottom "><h3>Please fill in our contact form</h3></div>
+                    <div class="form-group mb-3 mt-3 ps-5 pe-5">    
+                        <input class="form-control" type="text" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group mb-3 ps-5 pe-5">
+    
+                        <input class="form-control" type="text" id="number" placeholder="Enter Your contact Number">
+                    </div>
+                    <div class="form-group mb-3 ps-5 pe-5">
+    
+                        <input class="form-control form-control" type="email" id="email" placeholder="Enter Your email">
+                        <small class="form-text text-muted">Your email will not ever be shared</small>
+                    </div>
+                    <div class="form-group ps-5 pe-5">
+                        <label for="message"><h4>Message</h4></label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="d-grid gap-2 mt-5 mb-3">
+                        <button class="btn btn-dark" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
 
-                    <input class="form-control" type="text" id="name" placeholder="Enter name">
-                </div>
-                <div class="form-group mb-3">
-
-                    <input class="form-control" type="text" id="number" placeholder="Enter Your contact Number">
-                </div>
-                <div class="form-group mb-2">
-
-                    <input class="form-control form-control" type="email" id="email" placeholder="Enter email">
-                    <small class="form-text text-muted">Your email will not ever be shared</small>
-                </div>
-                <div class="form-group">
-                    <label for="message"><h4>Message</h4></label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <div class="d-grid gap-2 mt-3">
-                    <button class="btn btn-dark" type="submit">Submit</button>
-
-                  </div>
-            </form>
-          
         </div>
         <div class="col-md-6 ps-5">
             <div class="row">
-                <div class="col text-center">
-                    <h2>Contact Details</h2>
-                </div>
+                
             </div>
             <div class="row mt-3">
-                <div class="my-3 col-6 text-muted">
-                <h5>Office Number:   </h5>
-                <h5>Cellphone Numbers:</h5>
-                <h5>Cellphone Numbers:</h5>
-                <h5>Cellphone Numbers:</h5>
-                <h5>Email Address: </h5>
+                <div class="my-3 col">
 
-                </div>
-                <div class="my-3 text-end col-6">
-                <h5>082 565 3859</h5>
-                <h5>082 565 3859</h5>
-                <h5>082 565 3859</h5>
-                <h5>082 565 3859</h5>
-                <h5>reception@email.com</h5>
+                <div class="form-control">
+                    <div class="col text-center border-bottom">
+                        <h3>Contact Details</h3>
+                    </div>
+                    <div class="form-control">
+                        <div class="input-group mb-2 py-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Cellphone Number</span>
+                            <input value="082 565 3859" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-2 py-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Cellphone Number</span>
+                            <input value="082 565 3859" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-2 py-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Cellphone Number</span>
+                            <input value="082 565 3859" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-2 py-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Email Address</span>
+                            <input value="reception@email.com" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        
+                    
+                        
+                    </div>
+                    <div class="form-control mt-1 mb-2">
+                        <div class="col text-center mb-2 border-bottom">
+                            <h3>Our Physical Address</h3>
+                        </div>
+                        <div class="input-group m-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Street Number</span>
+                            <input value="7" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group m-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Street Name</span>
+                            <input value="Ninth Street" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group m-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">City</span>
+                            <input value="Fochville" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group m-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Province</span>
+                            <input value="Gauteng" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group m-2">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Potal Code</span>
+                            <input value="2515" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
 
-                </div>
+                    </div>
+                    
+
                 
-                
-                <h3 class="text-center mt-3 mb-3">Our Physical Address</h3>
-            
-                <div class="container text-muted">
-                <h5>7 Ninth Street</h5>
-                <h5>Fochville</h5>
-                <h5>Gauteng</h5>
-                <h5>2515</h5> 
-
+                    
                 </div>
-                       
+ 
+            </div>    
             </div>
             
         </div>
@@ -74,9 +104,9 @@
     </div>
    
 </div>
-<div class="container mt-5">
+<div class="container mb-5 ">
 
-    <div class="col align-self-end">
+    <div class="col align-self-end pb-5">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14283.92463144626!2d27.48467132037533!3d-26.488551526752982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95cbd640d0c185%3A0x32ed58733f47ca38!2s7%209th%20St%2C%20Fochville%2C%202515!5e0!3m2!1sen!2sza!4v1692689761948!5m2!1sen!2sza" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
